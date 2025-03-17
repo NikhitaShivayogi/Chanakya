@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title> Login Form</title>
+  <link rel="stylesheet" href="ABC.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="box">
+  <div class="login">
+    <div class="loginBx">
+      <h2>
+        <i class="fa-solid fa-right-to-bracket"></i>
+        Login
+        <i class="fa-solid fa-heart"></i>
+      </h2>
+      
+      <input type="text" placeholder="Username">
+      <input type="password" placeholder="Password">
+      <input type="submit" value="Sign in" id="submitButton"/>
+      <div class="group">
+        <a href="#">Forgot Password</a>
+        <a href="#">Sign up</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- partial -->
+<script>
+    document.getElementById('submitButton').addEventListener('click', function(event) {
+        event.preventDefault(); // Prevents default action
+        window.open('Task.html'); // Opens in a new tab or window
+    });
+</script>
+
+</body>
+</html>
